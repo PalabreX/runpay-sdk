@@ -14,7 +14,7 @@ The simplest path. Your agent just needs a `run.pay` balance (funded once via ca
 
 ```bash
 curl -X POST https://runpay-backend-visibility-production.up.railway.app/x402/SERVICE_ID \
-  -H "Authorization: Bearer YOUR_AGENT_ID" \
+  -H "x-agent-id: YOUR_AGENT_ID" \
   -H "Content-Type: application/json" \
   -d '{"your": "payload"}'
 ```
